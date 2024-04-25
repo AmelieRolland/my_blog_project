@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BandRegisterController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="mx-auto max-w-[900px]">
+  <h1 class="text-3xl my-6">Ajoute un groupe!</h1>
+
+  <p>
+    <img
+      src="{{ '/uploads/user/' ~ user.profilePicPath }}"
+      alt="{{ }}"
+      class="rounded-full max-h-[150px]"
+    />
+  </p>
+
+  <div>{{ form(form) }}</div>
+</div>
+{% endblock %}
